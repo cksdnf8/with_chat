@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>With Chat</title>
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+  <div id="container">
+    <p id="title">Start With Chat</p>
+    <p id="loginId">
+      아이디&nbsp;&nbsp;&nbsp;
+      <input type="text" id="inputId" placeholder="id">
+    </p>
+    <p id="loginPw">
+      패스워드
+      <input type="text" id="inputPw" placeholder="password">
+    </p>
+    <div id="buttonBox">
+      <button id="loginBtn">로그인</button>
+      <button id="joinBtn">회원가입</button>
+    </div>
+  </div>
+  <div id="container2">
+    <p id="loginTitle">???님 반갑습니다.</p>
+    <button id="makeChat">채팅방 만들기</button>
+    <div id="chatRoomList">
+      <div class="roomName title">채팅방</div>
+      <div class="roomId title">닉네임</div>
+      <div class="roomName content">친구해요<button class="joinBtn">참가</button></div>
+      <div class="roomId content">찬울</div>
+    </div>
+  </div>
+  <div id="container3">
+    <p id="roomTitle">친구해요</p>
+    <div id="textArea">
+      <div class="chatArea">
+        <div class="chatId">찬울</div>
+        <div class="chatText">안녕하세요
+          <span class="chatTime">12:30</span>
+        </div>
+
+        <div class="chatId">복돌</div>
+        <div class="chatText">안녕
+          <span class="chatTime">12:31</span>
+        </div>
+      </div>
+      <div id="inputBox">
+        <form>
+        <input type="text">
+        <button type="submit">보내기</button>
+      </form>
+      </div>
+    </div>
+    <div id="joinId">
+      <p id="memberList">대화상대</p>
+      <p>찬울</p>
+      <p>복돌</p>
+    </div>
+
+    <div id="outBtn">
+      <button>나가기</button>
+    </div>
+  </div>
+</body>
+</html>

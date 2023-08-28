@@ -1,0 +1,145 @@
+#container, #container2, #container3{
+  margin: 200px auto;
+  padding: 20px 0;
+  width: 400px;
+  background-color: rgb(115, 240, 231);
+}
+
+#title{
+  text-align: center;
+  font-size: 40px;
+}
+
+#loginId, #loginPw{
+  text-align: center;
+  width: 300px;
+  margin: 10px auto;
+}
+
+#inputId, #inputPw{
+  padding: 5px 10px;
+}
+
+#buttonBox{
+  text-align: center;
+  margin-top: 20px;
+}
+
+#buttonBox>button{
+  width: 70px;
+  margin-bottom: 20px;
+}
+/* 위: 로그인 이전, 아래 : 로그인 이후*/
+
+#loginTitle{
+  text-align: center;
+  font-size: 30px;
+}
+
+#chatRoomList{
+  background-color: white;
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+  overflow: auto;
+}
+.title{
+  font-weight: bold;
+  border: 1px solid black;
+  font-size: 26px;
+}
+
+.roomName, .roomId{
+  text-align: center;
+  float: left;
+  border: 1px solid gray;
+  border-left: none;
+  line-height: 30px;
+}
+.roomName{
+  width: 69.8%;
+}
+.roomId{
+  width: 29.8%;
+  border-right: none;
+}
+.joinBtn{
+  margin-left: 90px;
+}
+#makeChat{
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+/* 아래 : 채팅방*/
+#container3{
+  padding: 10px 20px;
+  overflow: hidden;
+}
+#roomTitle{
+  font-size: 30px;
+}
+
+#textArea{
+  background-color: white;
+  width: 70%;
+  height: 300px;
+}
+
+#textArea, #joinId{
+  float: left;
+}
+
+.chatArea{
+  overflow: auto;
+  width: 100%;
+}
+.chatId, .chatText{
+  float: left;
+}
+.chatId{
+  width: 20%;
+}
+.chatText{
+  width: 80%;
+}
+.chatTime{
+  font-size: 12px;
+}
+#inputBox{
+  position: relative;
+  top: 220px;
+  width: 100%;
+  text-align: center;
+}
+#inputBox>form>input{
+  width: 70%;
+  padding: 3px;
+}
+
+#memberList{
+  border-bottom: 1px solid black;
+}
+
+#joinId{
+  background-color: white;
+  width: 27%;
+  margin-left: 3%;
+  text-align: center;
+  overflow: auto;
+  height: 100px;
+}
+#joinId>p{
+  margin: 0;
+}
+
+#outBtn{
+  width: 27%;
+  margin-top: 280px;
+  text-align: center;
+  overflow: auto;
+  margin-left: 290px;
+}
+#outBtn>button{
+  width: 100px;
+}
