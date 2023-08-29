@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>With Chat</title>
+  <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+<body>
+  <div id="container">
+    <p id="title">With Chat</p>
+    <form action="/login" method="post">
+      <p id="loginId">
+        아이디&nbsp;&nbsp;&nbsp;
+        <input type="text" name="id" id="inputId" placeholder="id">
+      </p>
+      <p id="loginPw">
+        패스워드
+        <input type="text" name="password" id="inputPw" placeholder="password">
+      </p>
+      <div id="buttonBox">
+        <button id="loginBtn" type="submit">로그인</button>
+        <button id="joinBtn">회원가입</button>
+      </div>
+    </form>
+  </div>
+ 
+  <div id="container3">
+    <p id="roomTitle">친구해요</p>
+    <div id="textArea">
+      <div class="chatArea">
+        <div class="chatId">찬울</div>
+        <div class="chatText">안녕하세요
+          <span class="chatTime">12:30</span>
+        </div>
+
+        <div class="chatId">복돌</div>
+        <div class="chatText">안녕
+          <span class="chatTime">12:31</span>
+        </div>
+      </div>
+      <div id="inputBox">
+        <form>
+        <input type="text">
+        <button type="submit">보내기</button>
+      </form>
+      </div>
+    </div>
+    <div id="joinId">
+      <p id="memberList">대화상대</p>
+      <p>찬울</p>
+      <p>복돌</p>
+    </div>
+
+    <div id="outBtn">
+      <button>나가기</button>
+    </div>
+  </div>
+  <div id="container4">
+    <p>방 만들기</p>
+    <div id="makeRoomBox">
+      <form action="">
+        <input id="makeTitle" type="text" placeholder="방 제목을 입력하세요"></input>
+        <br>
+        <button type="submit">방 만들기</button>
+      </form>
+    </div> 
+  </div>
+  <div id="container5">
+    <p>회원가입</p>
+    <form action="">
+      <input type="text" placeholder="아이디를 입력하세요"><br>
+      <input type="text" placeholder="비밀번호를 입력하세요"><br>
+      <input type="text" placeholder="이름을 입력하세요"><br>
+      <input type="text" placeholder="닉네임을 입력하세요"><br>
+      <select name="selectGender" id="selectGender">
+        <option value="selectOption">성별 선택</option>
+        <option value="남">남</option>
+        <option value="여">여</option>
+      </select>
+      <button type="submit">가입하기</button>
+    </form>
+  </div>
+</body>
+</html>

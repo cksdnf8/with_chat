@@ -1,7 +1,8 @@
-#container, #container2, #container3{
+#container, #container2, #container3, #container4, #container5{
   margin: 200px auto;
   padding: 20px 0;
   width: 400px;
+  height: 440px;
   background-color: rgb(115, 240, 231);
 }
 
@@ -142,4 +143,56 @@
 }
 #outBtn>button{
   width: 100px;
+}
+
+/* 방 만들기 화면 */
+#container4>p{
+  width: 90%;
+  margin: 10px auto;
+  font-size: 28px;
+}
+
+#makeRoomBox{
+  width: 90%;
+  background-color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+#makeTitle{
+  line-height: 24px;
+  padding: 5px 10px;
+  margin: 20px 0;
+  width: 80%;
+}
+#makeRoomBox>form>button{
+  margin-bottom: 20px;
+  padding: 5px 10px;
+}
+
+/*회원가입*/
+#container5>p{
+  width: 90%;
+  margin: 10px auto;
+  font-size: 28px;
+}
+#container5>form{
+  width: 90%;
+  background-color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+#container5>form>input{
+  margin: 15px 0;
+  width: 80%;
+  padding: 5px 10px;
+}
+#container5>form>select{
+  margin: 15px 0;
+  width: 87%;
+  padding: 5px 10px;
+}
+
+#container5>form>button{
+  padding: 5px 10px;
+  margin: 15px 0;
 }
