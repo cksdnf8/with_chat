@@ -1,3 +1,7 @@
+html, body{
+	overflow: hidden;
+}
+
 #container, #container2, #container3, #container4, #container5{
   margin: 200px auto;
   padding: 20px 0;
@@ -85,6 +89,7 @@
   background-color: white;
   width: 70%;
   height: 300px;
+  overflow: auto;
 }
 
 #textArea, #joinId{
@@ -108,8 +113,9 @@
   font-size: 12px;
 }
 #inputBox{
-  position: relative;
-  top: 220px;
+  position: fixed;
+  top: 580px;
+  right: 60px;
   width: 100%;
   text-align: center;
 }

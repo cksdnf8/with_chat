@@ -10,5 +10,10 @@
 		FROM member
 		WHERE id=#{id} AND password=#{password}
 	</select>
+	
+	<insert id="registMember">
+		INSERT INTO member(id, password, name, nickname, gender, age) 
+		VALUES(#{id}, #{password}, #{name}, #{nickname}, #{gender}, #{age})
+	</insert>
    
 </mapper>

@@ -16,4 +16,9 @@ public class MemberServiceImpl implements MemberService {
 		Member member = memberMapper.login(id, password);
 		return member;
 	}
+	
+	@Override
+	public void registMember(String id, String password, String name, String nickname, String gender, int age) {
+		memberMapper.registMember(id, password, name, nickname, gender, age);
+	}
 }

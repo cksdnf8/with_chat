@@ -10,7 +10,9 @@
 <body>
   <div id="container2">
     <p id="loginTitle"><span th:text=${nickname}></span>님 반갑습니다.</p>
-    <button id="makeChat">채팅방 만들기</button>
+    <form method="get">
+      <button id="makeChat" formaction="/makeRoom">채팅방 만들기</button>
+    </form>
     <div id="chatRoomList">
       <div class="roomName title">채팅방</div>
       <div class="roomId title">닉네임</div>

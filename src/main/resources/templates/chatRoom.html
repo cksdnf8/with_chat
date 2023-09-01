@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>With Chat</title>
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <!-- <link rel="stylesheet" href="../static/assets/css/index.css"> -->
+  <script defer>
+    let socket =  new WebSocket("ws://localhost/socket");
+
+
+
+    socket.onopen = function (e) {
+        console.log('open server!')
+    };
+
+    socket.onerror = function (e){
+        console.log(e);
+    }
+    
+    socket.onmessage = function (e) {
+        console.log(e.data);
+        let msgArea = document.querySelector('.chatText');
+        let newMsg = document.createElement('div');
+        newMsg.innerText=e.data;
+        msgArea.append(newMsg);
+    }
+
+    function sendMsg() {
+        let content = document.querySelector('.content').value;
+        document.querySelector('.content').innerHTML = " ";
+        socket.send(content);
+    }
+    
+    </script>
+</head>
+<body>
+  <div id="container3">
+    <p id="roomTitle" th:text="${roomName.getName()}"></p>
+    <div id="textArea">
+      <div class="chatArea">
+        <div class="chatId"></div>
+        <div class="chatText">
+          <span class="chatTime"></span>
+        </div>
+      </div>
+      <div id="inputBox">
+        <input type="text" class="content" onKeypress="javascript:if(event.keyCode==13) {sendMsg()}">
+        <button onKeypress="javascript:if(event.keyCode==13) {sendMsg()}">보내기</button>
+      </div>
+    </div>
+    <div id="joinId">
+      <p id="memberList">대화상대</p>
+      <p class="joinNickName" th:text="${member}"></p>
+    </div>
+
+    <div id="outBtn">
+      <button>나가기</button>
+    </div>
+  </div>
+</body>
+</html>
